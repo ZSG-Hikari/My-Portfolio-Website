@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin Otsuka Arjun — Portfolio</title>
+  <meta name="description" content="Sachin Otsuka Arjun — Portfolio: projects, skills, and contact." />
+
+  <!-- Social preview (optional) -->
+  <meta property="og:title" content="Sachin Otsuka Arjun — Portfolio" />
+  <meta property="og:description" content="Work Experience, Projects, skills, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script"></script>
+</head>
+
+<body>
+  <!-- Accessibility: allow keyboard users to jump to content -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="logo" href="#home">Sachin Otsuka Arjun</a>
+      <button class="mobile-toggle" aria-controls="nav-menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span> ☰
+      </button>
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="#experience">Work-Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="contact-link">Contact</a></li>
+        <li><button class="theme-toggle" data-theme-toggle aria-label="Toggle color theme" title="Toggle theme">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="section hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1>Hi, I’m <span class="accent"> Sachin Otsuka Arjun</span>.</h1>
+          <h3 class="lead">Evidence over opinion: Analytics, Experiments, and ML.</h3>
+          <h3> ABOUT ME </h3>
+          <p>I’m a <span class="accent">Data Analyst, Data Scientist, and Machine Learning Engineer</span> passionate about solving complex problems at the intersection of AI, analytics, and sports. I’m currently pursuing my <span class="accent">Master’s in Applied Analytics at Columbia University</span>, where I specialize in transforming raw data into actionable insights and building scalable machine learning solutions.</p>
+
+          <p>I thrive in fast-paced, collaborative environments where I can invent, iterate, and lead projects from concept to impact. Whether it’s <span class="accent">evaluating AI models, optimizing data pipelines, or blending qualitative and quantitative insights</span>, I’m motivated by building systems that make a measurable difference.</p>
+
+          <p>When I’m not working with data, you’ll probably find me on the <span class="accent">football pitch (soccer!), exploring NYC, or brainstorming</span> the next big idea that bridges sports, technology, and AI.</p>
+
+          <div class="hero__cta">
+            <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
+            <a class="btn btn--secondary" href="#projects">View Projects</a>
+          </div>
+          <ul class="social">
+            <li><a href="https://github.com/yourhandle" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/sachin-otsuka-arjun/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:your.email@domain.com">Email</a></li>
+          </ul>
+        </div>
+        <div class="hero__image">
+          <img src="assets/mainpic.png" alt="Portrait of Sachin Otsuka Arjun" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Experience -->
+<section id="experience" class="section section--alt">
+  <div class="container">
+    <h2 class="section__title">Work Experience</h2>
+
+    <div class="xp">
+      <!-- PrivateBlok -->
+      <article class="xp-item reveal">
+        <div class="xp-dot" aria-hidden="true"></div>
+        <div class="xp-card">
+          <header class="xp-header">
+            <!-- optional logo: put assets/privateblok.png if you have it -->
+            <!-- <img class="xp-logo" src="assets/privateblok.png" alt="PrivateBlok logo" /> -->
+            <div>
+              <h3 class="xp-title">Data Engineer — <span class="accent">PrivateBlok</span></h3>
+              <p class="xp-meta muted small">Aug 2023 – Jul 2024 · Bengaluru, India</p>
+            </div>
+          </header>
+          <ul class="xp-bullets">
+            <li>Architected a scalable relational store integrating MCA + external APIs, consolidating structured & semi-structured data from <strong>1,000+ Indian Pvt Ltd companies</strong> for faster access and analytics.</li>
+            <li>Built multithreaded scraping & ETL pipelines, boosting extraction speed by <strong>~400%</strong> and cutting cycle time to near real-time for downstream teams.</li>
+            <li>Implemented end-to-end data quality checks (anomaly detection/QA), achieving <strong>99%+ accuracy</strong> and improving cross-team productivity by <strong>~20%</strong>.</li>
+          </ul>
+          <ul class="xp-badges">
+            <li>AI</li><li>Excel</li><li>Web Scraping</li><li>APIs</li><li>Data Quality</li><li>Data Integration</li><li>Database Management</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- CoachEd -->
+      <article class="xp-item reveal">
+        <div class="xp-dot" aria-hidden="true"></div>
+        <div class="xp-card">
+          <header class="xp-header">
+            <!-- optional logo: assets/coached.png -->
+            <!-- <img class="xp-logo" src="assets/coached.png" alt="CoachEd logo" /> -->
+            <div>
+              <h3 class="xp-title">Web Development Intern — <span class="accent">CoachEd</span></h3>
+              <p class="xp-meta muted small">Sep 2022 – Oct 2022 · Mysore, India</p>
+            </div>
+          </header>
+          <ul class="xp-bullets">
+            <li>Developed a dynamic <strong>Restaurant-Reservation</strong> website using <strong>HTML, CSS, Sass, JavaScript, and Bootstrap</strong>.</li>
+            <li>Improved responsiveness for seamless behavior across device sizes and viewports.</li>
+            <li>Ran code reviews and integrated best practices to strengthen performance and security.</li>
+          </ul>
+          <ul class="xp-badges">
+            <li>HTML</li><li>CSS/Sass</li><li>JavaScript</li><li>Bootstrap</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+      
+
+        <div class="cards">
+          <!-- Geo-Spatial Analysis of NYC Neighborhoods -->
+            <article class="card">
+    <img class="card__img" src="assets/nyc_geo.png" alt="NYC Neighborhood Insights Dashboard" />
+    <div class="card__body">
+      <h3 class="card__title">
+        <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l7 4v6c0 5-7 10-7 10S5 17 5 12V6l7-4zm0 2.2L7 6.6v5.2c0 3.4 3.4 6.7 5 8 1.6-1.3 5-4.6 5-8V6.6l-5-2.4zM12 7a3 3 0 110 6 3 3 0 010-6z"/></svg>
+        Geo-Spatial Analysis of NYC Neighborhoods
+      </h3>
+      <p>Conducted geo-spatial analysis of NYC neighborhoods to help first-time residents overcome decision paralysis (~300k movers/year). Built cross-sectional datasets via ETL from Google Maps API, Zillow Research, NYC Open Data, and SimpleMaps; delivering personalized recommendations and on an interactive Tableau dashboard.</p>
+      <ul class="tags"><li>APIs</li><li>Tableau</li></ul>
+      <div class="card__actions">
+        <a class="btn btn--small" href="#" target="_blank" rel="noopener">Live</a>
+        <a class="btn btn--small btn--ghost" href="#" target="_blank" rel="noopener">Report</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- NYC Crime Data Analytics Platform -->
+  <article class="card">
+    <img class="card__img" src="assets/nyc_crime.png" alt="NYC-Crime Analytics – End to End Retrieval System" />
+    <div class="card__body">
+      <h3 class="card__title">
+        <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h18v2H3V3zm0 5h10v2H3V8zm0 5h14v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+        NYC Crime Data Analytics Platform
+      </h3>
+      <p>Engineered a full-stack pipeline for 10M+ records: PySpark ETL, MongoDB/Postgres storage, Neo4j network views, and a Flask UI for hotspot detection and clustering—turning raw incidents into actionable city-safety insights.</p>
+      <ul class="tags"><li>PySpark</li><li>MongoDB</li><li>Postgres</li><li>Neo4j</li><li>Flask</li></ul>
+      <div class="card__actions">
+        <a class="btn btn--small" href="#" target="_blank" rel="noopener">Live</a>
+        <a class="btn btn--small btn--ghost" href="#" target="_blank" rel="noopener">Code</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- MLS Soccer Analytics & Player Profiling -->
+  <article class="card">
+    <img class="card__img" src="assets/mls.png" alt="MLS Soccer Analytics – Archetype & Anomaly Detection" />
+    <div class="card__body">
+      <h3 class="card__title">
+        <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h2v20H7V2zm8 0h2v20h-2V2zM2 7h20v2H2V7zm0 8h20v2H2v-2z"/></svg>
+        MLS Soccer Analytics & Player Profiling
+      </h3>
+      <p>Linked physical traits to performance (xG, assists, points added) with clustering to find archetypes and position misfits. Produced scouting shortlists and development cues using 2024 MLS data.</p>
+      <ul class="tags"><li>R</li><li>Clustering</li><li>xG</li><li>Scouting</li></ul>
+      <div class="card__actions">
+        <a class="btn btn--small" href="#" target="_blank" rel="noopener">Live</a>
+        <a class="btn btn--small btn--ghost" href="#" target="_blank" rel="noopener">Report</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Real Estate Market Simulation in NYC Boroughs -->
+  <article class="card">
+    <img class="card__img" src="assets/ctr.png" alt="Kaggle Competition" />
+    <div class="card__body">
+      <h3 class="card__title">
+        <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9z"/></svg>
+        Predictive Modeling of Click-Through Rate(CTR) Using Advanced Machine Learning Techniques
+      </h3>
+      <p>Built a CTR prediction pipeline that cleaned mixed ad data, handled missingness, and engineered campaign signals to turn raw logs into decision-ready metrics. Benchmarked linear, tree, and RF models, selected tuned XGBoost for the best RMSE on a held-out scoring set</p>
+      <ul class="tags"><li>Experiment Design</li><li>Simulation</li><li>Cost Analysis</li></ul>
+      <div class="card__actions">
+        <a class="btn btn--small" href="#" target="_blank" rel="noopener">Slides</a>
+        <a class="btn btn--small btn--ghost" href="#" target="_blank" rel="noopener">Summary</a>
+      </div>
+    </div>
+  </article>
+</div>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills">
+          <div>
+            <h3><span class="accent">Core</span></h3>
+            <ul class="list">
+              <li>Python, R, SQL, C Programming</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>Cloud: Amazon Web Services(AWS), Microsoft Azure</li>
+            </ul>
+          </div>
+          <div>
+            <h3><span class="accent">Frameworks: Data & ML</span></h3>
+            <ul class="list">
+              <li>Tableau, Neo4j, Docker, MongoDB, Spark, MySQL, PostgreSQL </li>
+              <li>Tensorflow, Scikit-learn, NumPy, PySpark, Pandas, Git, Postman, REST API, JSON, HTTP</li>
+              
+            </ul>
+          </div>
+          <div>
+            <h3><span class="accent">Hobbies and Languages</span></h3>
+            <ul class="list">
+              <li>Hobbies: Football(Soccer), Basketball, Baseball, Hockey, Golf, Music, Travelling</li>
+              <li>Languages:English, Native; Japanese, Native; Hindi, Fluent; Kannada, Fluent</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container ">
+        <h2 class="section__title">Contact</h2>
+        <p>Quickest way to reach me:</p>
+
+        <div class="contact-actions">
+          <!-- 1) Direct email link (edit address/subject/body) -->
+          <a class="btn" href="mailto:your.email@domain.com?subject=Hello%20Sachin&body=Hi%20Sachin%2C%0A%0A" >Email me</a>
+
+          <!-- 2) LinkedIn -->
+          <a class="btn btn--secondary" href="https://www.linkedin.com/in/sachin-otsuka-arjun/" target="_blank" rel="noopener" >LinkedIn</a>
+
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sachin Otsuka Arjun. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
