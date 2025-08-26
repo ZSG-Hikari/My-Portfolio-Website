@@ -59,7 +59,7 @@
             <a class="btn btn--secondary" href="#projects">View Projects</a>
           </div>
           <ul class="social">
-            <li><a href="https://github.com/yourhandle" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://github.com/ZSG-Hikari" target="_blank" rel="noopener">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/sachin-otsuka-arjun/" target="_blank" rel="noopener">LinkedIn</a></li>
             <li><a href="mailto:sangoten24@gmail.com">Email</a></li>
           </ul>
@@ -244,13 +244,23 @@
         <p>Quickest way to reach me:</p>
 
         <div class="contact-actions">
-          <!-- 1) Direct email link (edit address/subject/body) -->
-          <a class="btn" href="sangoten24@gmail.com?subject=Hello%20Sachin&body=Hi%20Sachin%2C%0A%0A" >Email me</a>
 
-          <!-- 2) LinkedIn -->
+          <!-- 1) LinkedIn -->
           <a class="btn btn--secondary" href="https://www.linkedin.com/in/sachin-otsuka-arjun/" target="_blank" rel="noopener" >LinkedIn</a>
-
           
+          <!-- 2) Direct email link (edit address/subject/body) -->
+          <a class="btn" href="mailto:sangoten24@gmail.com?subject=Hello%20Sachin&body=Hi%20Sachin%2C%0A%0A" >Email me</a>
+
+          <!-- 3)Copy email (clean + accessible) -->
+          <button class="btn btn--ghost btn--small copy-email"
+          type="button"
+          data-email="sangoten24@gmail.com"
+          aria-label="Copy email address to clipboard"> <span class="copy-icon" aria-hidden="true">📋</span><span class="copy-label">Copy email</span>
+          </button>
+
+          <!-- Subtle live status for screen readers -->
+          <span id="copyStatus" class="copy-status small muted" role="status" aria-live="polite"></span> 
+
         </div>
       </div>
     </section>

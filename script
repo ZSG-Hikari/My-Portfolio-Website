@@ -69,3 +69,45 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
   document.querySelectorAll('section[id]').forEach(s => obs.observe(s));
 })();
+
+
+// Copy email with feedback (works with/without Clipboard API)
+(() => {
+  const btn = document.querySelector('.copy-email');
+  const statusEl = document.getElementById('copyStatus');
+  if (!btn) return;
+
+  const EMAIL = btn.dataset.email || '';
+
+  function setFeedback(msg, copied) {
+    if (statusEl) statusEl.textContent = msg;
+    btn.classList.toggle('is-copied', !!copied);
+    const base = 'Copy email';
+    const label = btn.querySelector('.copy-label');
+    if (label) label.textContent = copied ? 'Copied ✓' : base;
+    btn.setAttribute('aria-label', copied ? 'Email copied to clipboard' : 'Copy email address to clipboard');
+    if (copied) setTimeout(() => setFeedback('', false), 1400);
+  }
+
+  async function copyEmail() {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(EMAIL);
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = EMAIL;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      setFeedback('Copied to clipboard', true);
+    } catch {
+      setFeedback('Couldn’t copy. Long-press to copy.', false);
+    }
+  }
+
+  btn.addEventListener('click', copyEmail);
+})();

@@ -331,3 +331,34 @@ body.theme-light .xp-logo{ border-color: #e6edf6; background:#f8fafc; }
 
 
 .nav a.active { color: var(--accent); font-weight: 600; }
+
+
+/* Copy email button polish */
+.copy-email { min-width: 9.5rem; transition: transform .15s ease, border-color .15s ease; }
+.copy-email:active { transform: translateY(1px); }
+.copy-icon { margin-right: .35rem; }
+.copy-status { margin-left: .5rem; min-height: 1em; }
+.btn { cursor: pointer; }
+
+
+/* success state */
+.copy-email.is-copied {
+  border-color: color-mix(in srgb, var(--accent) 60%, #fff);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+/* respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .copy-email { transition: none; }
+}
+
+
+
+/* Make LinkedIn look like the solid accent button inside Contact */
+#contact .btn--secondary{
+  background: var(--accent);
+  color: var(--accent-ink);
+  outline: none;
+  border: none;
+}
+#contact .btn--secondary:hover{ filter: brightness(1.05); }
